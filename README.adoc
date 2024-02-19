@@ -1,0 +1,16 @@
+= Practice #3
+:toc:
+
+
+.plan
+* [ ] FRP
+* [ ] Interpreter
+* [ ] Running a process
+* [ ] Reflection, Class loading
+* [ ] DI
+* [ ] Annotation processing
+* [ ] Actors
+* [ ] Proxies, Aspects, AOP
+
+.maybe
+* [ ] Layered Architecture
