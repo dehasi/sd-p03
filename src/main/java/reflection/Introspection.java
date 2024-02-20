@@ -14,8 +14,6 @@ class Introspection {
          Class<MyClass> clazz = MyClass.class;
 //        Class<MyClass> clazz = (Class<MyClass>) Class.forName("reflection.Introspection$MyClass");
 
-
-
         System.out.println("Class:");
         System.out.println(clazz.getCanonicalName());
 
