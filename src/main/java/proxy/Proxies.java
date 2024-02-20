@@ -18,6 +18,12 @@ class Proxies {
         System.out.println(fib.fib(4));
     }
 
+    static class FortyTwo implements InvocationHandler {
+        @Override public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+            return 42;
+        }
+    }
+
     static class InvocationLogger implements InvocationHandler {
 
         final Object original;
