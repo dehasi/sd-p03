@@ -36,6 +36,7 @@ class Var {
     }
 
     public static Var bind(Var var, Function<Integer, Integer> transformation) {
+        // var bound = new Var(transformation.apply(var.value), transformation);
         var bound = new Var(var.value, transformation);
         var.notify(bound);
         return bound;
