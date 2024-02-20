@@ -9,7 +9,7 @@ import java.util.Map;
 class Proxies {
     public static void main(String[] args) {
         Fib original_fib = new FibImpl();
-
+//        Fib fib = original_fib;
         Fib fib = (Fib) Proxy.newProxyInstance(Proxies.class.getClassLoader(),
                 new Class[]{Fib.class}, new FibCachingProxy(original_fib));
 
@@ -19,7 +19,7 @@ class Proxies {
     }
 
     static class FortyTwo implements InvocationHandler {
-        @Override public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        @Override public Object invoke(Object proxy, Method method, Object[] args) {
             return 42;
         }
     }
@@ -51,12 +51,12 @@ class Proxies {
 
         @Override public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             if (cache.containsKey(args[0])) {
-                System.err.println("Return result from proxy");
+                System.out.println("Return result from proxy");
                 return cache.get(args[0]);
             } else {
                 var result = method.invoke(original, args);
                 cache.put(args[0], result);
-                System.err.println("Save result into proxy");
+                System.out.println("Save result into proxy");
                 return result;
             }
         }
