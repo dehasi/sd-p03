@@ -1,7 +1,6 @@
 = Practice #3
 :toc:
 
-
 .plan
 * [ ] Announce "soft" & "hard" deadlines, 0-0.5-1
 * [ ] FRP
