@@ -3,6 +3,7 @@
 
 
 .plan
+* [ ] Announce "soft" & "hard" deadlines
 * [ ] FRP
 * [ ] Interpreter
 * [ ] Running a process
