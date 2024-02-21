@@ -2,15 +2,15 @@
 :toc:
 
 .plan
-* [ ] Announce "soft" & "hard" deadlines, 0-0.5-1
-* [ ] FRP
-* [ ] Interpreter
-* [ ] Running a process
-* [ ] Reflection, Class loading
-* [ ] DI
-* [ ] Annotation processing
-* [ ] Actors
-* [ ] Proxies, Aspects, AOP
+* [x] Announce "soft" & "hard" deadlines, 0 - 0.5 - 1
+* [x] FRP
+* [x] Interpreter
+* [x] Running a process
+* [x] Reflection, Class loading
+* [x] DI
+* [x] Annotation processing
+* [x] Actors
+* [x] Proxies, Aspects, AOP
 
 .maybe
 * [ ] Layered Architecture
